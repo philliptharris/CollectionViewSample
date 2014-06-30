@@ -23,8 +23,10 @@
     flowLayout.minimumLineSpacing = 0.5;
     flowLayout.minimumInteritemSpacing = 0.5;
     flowLayout.itemSize = CGSizeMake(52.0, 52.0);
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     MyCollectionViewLayout *myLayout = [[MyCollectionViewLayout alloc] init];
+//    myLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     MyCollectionViewController *viewController = [[MyCollectionViewController alloc] initWithCollectionViewLayout:myLayout];
 //    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];

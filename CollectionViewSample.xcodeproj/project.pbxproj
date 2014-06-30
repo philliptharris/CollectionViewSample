@@ -21,6 +21,8 @@
 		1171B5391961B6FD00889803 /* CollectionViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5381961B6FD00889803 /* CollectionViewSampleTests.m */; };
 		1171B5441961B7D300889803 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5431961B7D300889803 /* MyCollectionViewController.m */; };
 		1171B5471961C94400889803 /* MyCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5461961C94400889803 /* MyCollectionViewLayout.m */; };
+		1171B54A1961EB9800889803 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5491961EB9800889803 /* MyCell.m */; };
+		1171B54C1961ED2300889803 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1171B54B1961ED2300889803 /* MyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		1171B5431961B7D300889803 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
 		1171B5451961C94400889803 /* MyCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayout.h; sourceTree = "<group>"; };
 		1171B5461961C94400889803 /* MyCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayout.m; sourceTree = "<group>"; };
+		1171B5481961EB9800889803 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		1171B5491961EB9800889803 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		1171B54B1961ED2300889803 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 				1171B5431961B7D300889803 /* MyCollectionViewController.m */,
 				1171B5451961C94400889803 /* MyCollectionViewLayout.h */,
 				1171B5461961C94400889803 /* MyCollectionViewLayout.m */,
+				1171B5481961EB9800889803 /* MyCell.h */,
+				1171B5491961EB9800889803 /* MyCell.m */,
+				1171B54B1961ED2300889803 /* MyCell.xib */,
 				1171B51A1961B6FD00889803 /* Supporting Files */,
 			);
 			path = CollectionViewSample;
@@ -230,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1171B51E1961B6FD00889803 /* InfoPlist.strings in Resources */,
+				1171B54C1961ED2300889803 /* MyCell.xib in Resources */,
 				1171B5261961B6FD00889803 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +261,7 @@
 				1171B5241961B6FD00889803 /* AppDelegate.m in Sources */,
 				1171B5201961B6FD00889803 /* main.m in Sources */,
 				1171B5471961C94400889803 /* MyCollectionViewLayout.m in Sources */,
+				1171B54A1961EB9800889803 /* MyCell.m in Sources */,
 				1171B5441961B7D300889803 /* MyCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +382,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollectionViewSample/CollectionViewSample-Prefix.pch";
 				INFOPLIST_FILE = "CollectionViewSample/CollectionViewSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -385,7 +397,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollectionViewSample/CollectionViewSample-Prefix.pch";
 				INFOPLIST_FILE = "CollectionViewSample/CollectionViewSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

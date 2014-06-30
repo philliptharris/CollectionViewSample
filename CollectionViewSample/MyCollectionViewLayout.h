@@ -10,4 +10,9 @@
 
 @interface MyCollectionViewLayout : UICollectionViewLayout
 
+@property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;
+
+@property (nonatomic, assign) UIEdgeInsets outsideMargins;
+@property (nonatomic, assign) CGSize minimumSize;
+
 @end

@@ -8,6 +8,8 @@
 
 #import "MyCollectionViewController.h"
 
+#import "MyCell.h"
+
 @interface MyCollectionViewController ()
 
 @end
@@ -47,7 +49,7 @@
 }
 
 - (void)commonInit {
-    
+    self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 //===============================================
@@ -59,7 +61,8 @@
 {
     [super viewDidLoad];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellId"];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellId"];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([MyCell class]) bundle:nil] forCellWithReuseIdentifier:MyCellId];
 }
 
 //===============================================
@@ -77,7 +80,9 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellId" forIndexPath:indexPath];
+//    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellId" forIndexPath:indexPath];
+    MyCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MyCellId forIndexPath:indexPath];
+    cell.label.text = [NSString stringWithFormat:@"%i", indexPath.row];
     
     cell.backgroundColor = [UIColor colorWithRed:1.0 green:0.5 blue:(indexPath.row / 100.0) alpha:1.0];
     
