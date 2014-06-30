@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "MyCollectionViewController.h"
+#import "MyCollectionViewLayout.h"
 
 @implementation AppDelegate
 
@@ -22,7 +23,10 @@
     flowLayout.minimumLineSpacing = 0.5;
     flowLayout.minimumInteritemSpacing = 0.5;
     flowLayout.itemSize = CGSizeMake(52.0, 52.0);
-    MyCollectionViewController *viewController = [[MyCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    
+    MyCollectionViewLayout *myLayout = [[MyCollectionViewLayout alloc] init];
+    
+    MyCollectionViewController *viewController = [[MyCollectionViewController alloc] initWithCollectionViewLayout:myLayout];
 //    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
     self.window.rootViewController = viewController;

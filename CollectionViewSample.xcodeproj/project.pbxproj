@@ -20,6 +20,7 @@
 		1171B5371961B6FD00889803 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1171B5351961B6FD00889803 /* InfoPlist.strings */; };
 		1171B5391961B6FD00889803 /* CollectionViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5381961B6FD00889803 /* CollectionViewSampleTests.m */; };
 		1171B5441961B7D300889803 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5431961B7D300889803 /* MyCollectionViewController.m */; };
+		1171B5471961C94400889803 /* MyCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171B5461961C94400889803 /* MyCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		1171B5381961B6FD00889803 /* CollectionViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewSampleTests.m; sourceTree = "<group>"; };
 		1171B5421961B7D300889803 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
 		1171B5431961B7D300889803 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
+		1171B5451961C94400889803 /* MyCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewLayout.h; sourceTree = "<group>"; };
+		1171B5461961C94400889803 /* MyCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				1171B5251961B6FD00889803 /* Images.xcassets */,
 				1171B5421961B7D300889803 /* MyCollectionViewController.h */,
 				1171B5431961B7D300889803 /* MyCollectionViewController.m */,
+				1171B5451961C94400889803 /* MyCollectionViewLayout.h */,
+				1171B5461961C94400889803 /* MyCollectionViewLayout.m */,
 				1171B51A1961B6FD00889803 /* Supporting Files */,
 			);
 			path = CollectionViewSample;
@@ -246,6 +251,7 @@
 			files = (
 				1171B5241961B6FD00889803 /* AppDelegate.m in Sources */,
 				1171B5201961B6FD00889803 /* main.m in Sources */,
+				1171B5471961C94400889803 /* MyCollectionViewLayout.m in Sources */,
 				1171B5441961B7D300889803 /* MyCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
